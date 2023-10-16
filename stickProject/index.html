@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Stick Figure</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        canvas {
+            border: 2px solid #000;
+        }
+    </style>
+</head>
+<body>
+    <div class="button-section">
+        <!-- Add the "Take Snapshot" button above the canvas -->
+        <button id="snapshotButton">Take Snapshot</button>
+    </div>
+    <canvas id="stick-figure" width="300" height="400"></canvas>
+    
+    <div class="button-section">
+        <!-- Color Buttons Section -->
+        <button id="blackButton">Black</button>
+        <button id="greyButton">Grey</button>
+        <button id="orangeButton">Orange</button>
+        <button id="greenButton">Green</button>
+        <button id="redButton">Red</button>
+        <button id="blueButton">Blue</button>
+        <button id="purpleButton">Purple</button>
+    </div>
+
+    <div class="button-section">
+        <!-- GIF Buttons Section -->
+        <button id="startRecordingGIFButton">Start Recording GIF</button>
+        <button id="stopRecordingGIFButton" disabled>Stop Recording GIF</button>
+    </div>
+
+    <script src="js/gif.worker.js"></script>
+    <script src="js/gif.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
